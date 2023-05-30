@@ -10,11 +10,11 @@ class SessionsController < ApplicationController
         flash["notice"] = "You are now logged-in."
         redirect_to "/"
       else
-        flash["notice"] = "Sorry, invalid username or password."
+        flash["notice"] = "Invalid Username or Password. Please try again."
         redirect_to "/login"
       end
     else
-      flash["notice"] = "Sorry, invalid username or password."
+      flash["notice"] = "Invalid Username or Password. Please try again."
       redirect_to "/login"
     end
   end
